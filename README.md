@@ -8,5 +8,5 @@ The default CloudFlare firewall rules for mTLS didn't include the case where cer
 
 
 ```
-(http.host in {"mtls.wanzul.net"} and (not cf.tls_client_auth.cert_verified or cf.tls_client_auth.cert_revoked))
+(http.host in {"host.example"} and (not cf.tls_client_auth.cert_verified or cf.tls_client_auth.cert_revoked))
 ```
